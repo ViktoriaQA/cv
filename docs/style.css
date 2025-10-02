@@ -259,6 +259,85 @@ footer {
     
     .theme-controls {
         top: 20px;
-        right: 20px;
+        right: 40px;
+    }
+
+    /* Стилі для клікабельного імені */
+    .clickable-name {
+        cursor: pointer;
+        transition: var(--transition);
+        position: relative;
+    }
+
+    .clickable-name:hover {
+        color: var(--accent-color);
+        transform: scale(1.05);
+    }
+
+    .clickable-name::after {
+        /* content: '🔍'; */
+        font-size: 0.8em;
+        margin-left: 10px;
+        opacity: 0;
+        transition: var(--transition);
+    }
+
+    .clickable-name:hover::after {
+        opacity: 1;
+    }
+
+    /* Стилі для підсвітки блоку About */
+    .about-section.highlighted {
+        animation: highlightPulse 2s ease-in-out;
+        position: relative;
+    }
+
+    .about-section.highlighted::before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        border: 3px solid var(--accent-color);
+        border-radius: var(--border-radius);
+        animation: borderPulse 2s ease-in-out;
+    }
+
+    @keyframes highlightPulse {
+        0% {
+            background-color: var(--section-bg);
+            box-shadow: var(--box-shadow);
+        }
+        50% {
+            background-color: color-mix(in srgb, var(--accent-color) 10%, var(--section-bg));
+            box-shadow: 0 0 20px rgba(231, 76, 60, 0.3);
+        }
+        100% {
+            background-color: var(--section-bg);
+            box-shadow: var(--box-shadow);
+        }
+    }
+
+    @keyframes borderPulse {
+        0% {
+            opacity: 0;
+            transform: scale(1);
+        }
+        50% {
+            opacity: 1;
+            transform: scale(1.02);
+        }
+        100% {
+            opacity: 0;
+            transform: scale(1);
+        }
+    }
+
+    /* Альтернативний варіант підсвітки - простіший */
+    .about-section.simple-highlight {
+        border: 2px solid var(--accent-color);
+        box-shadow: 0 0 15px rgba(231, 76, 60, 0.4);
+        transition: all 0.5s ease;
     }
 }

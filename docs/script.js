@@ -95,6 +95,7 @@
                 this.setupContactAnimations();
                 this.setupSectionObservers();
                 this.applyLanguage();
+                this.setupNameClick();
                 
                 setTimeout(() => {
                     document.body.classList.add('loaded');
@@ -272,6 +273,60 @@
                 sections.forEach((section) => {
                     observer.observe(section);
                 });
+            }
+            setupNameClick() {
+                const nameElement = document.querySelector('.clickable-name');
+                const aboutSection = document.getElementById('about');
+                
+                if (nameElement && aboutSection) {
+                    // Для кліку
+                    nameElement.addEventListener('click', () => {
+                        this.scrollAndHighlightAbout();
+                    });
+                    
+                    // Для тач-пристроїв
+                    nameElement.addEventListener('touchstart', (e) => {
+                        e.preventDefault();
+                        this.scrollAndHighlightAbout();
+                    });
+                    
+                    nameElement.style.cursor = 'pointer';
+                    nameElement.style.userSelect = 'none'; // Забороняємо виділення тексту
+                }
+            }
+
+            setupNameClick() {
+                const nameElement = document.querySelector('.clickable-name');
+                const aboutSection = document.getElementById('about');
+                
+                if (nameElement && aboutSection) {
+                    nameElement.addEventListener('click', () => {
+                        this.scrollAndHighlightAbout();
+                    });
+                    
+                    // Додаємо також курсор-покажчик через JS для надійності
+                    nameElement.style.cursor = 'pointer';
+                }
+            }
+            
+            scrollAndHighlightAbout() {
+                const aboutSection = document.getElementById('about');
+                if (!aboutSection) return;
+                
+                // Скролимо до секції
+                window.scrollTo({
+                    behavior: 'smooth',
+                    top: aboutSection.offsetTop - this.scrollOffset
+                });
+                
+                // Додаємо клас підсвітки
+                aboutSection.classList.add('highlighted');
+                aboutSection.classList.add('about-section'); // Додатково для специфічності
+                
+                // Видаляємо підсвітку через 2 секунди
+                setTimeout(() => {
+                    aboutSection.classList.remove('highlighted');
+                }, 2000);
             }
         }
 
