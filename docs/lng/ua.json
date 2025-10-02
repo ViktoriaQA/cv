@@ -1,0 +1,45 @@
+{
+    "name": "Віта Франк",
+    "title": "Manual & Automation QA Інженер",
+    "skills": "Навички",
+    "about": "Про себе",
+    "copyright": "© 2025 QA Engineer",
+    "telegram": "Telegram",
+    "github": "GitHub",
+    "email": "Email",
+    
+    "manualTesting": "Мануальне тестування",
+    "technicalSkills": "Технічні навички",
+    "automationTesting": "Автоматизація тестування",
+    "tools": "Інструменти",
+    "softSkills": "Софт скіли",
+    
+    "testCases": "Тест кейси та чеклисти",
+    "smokeRegression": "Smoke та regression тестування",
+    "blackboxGraybox": "Black-box та gray-box тестування",
+    "testPlans": "Тест плани",
+    
+    "linuxUnix": "Linux/Unix: термінал, SSH, файлова система",
+    "git": "Git: гілки, оновлення, мердж",
+    "sql": "SQL: запити для валідації даних",
+    "apiTesting": "API тестування: HTTP, Postman, JSON валідація",
+    "webTesting": "Web тестування: Chrome DevTools, CSS/HTML",
+    "mobileTesting": "Mobile тестування (web): UX best practices",
+    
+    "cypress": "Cypress: UI тестування, E2E покриття",
+    "playwright": "Playwright: API тестування, CRUD операції",
+    "schemaValidation": "Валідація схем",
+    "fileExport": "Перевірка експорту файлів",
+    
+    "testManagement": "Системи управління тестуванням",
+    
+    "attentionDetail": "Увага до деталей",
+    "analyticalThinking": "Аналітичне мислення",
+    "clearCommunication": "Чітке спілкування",
+    "problemSolving": "Вирішення проблем та дебаггінг",
+    "adaptability": "Адаптивність та швидке навчання",
+    "timeManagement": "Тайм менеджмент",
+    
+    "aboutText1": "Я спеціалізуюсь на забезпеченні якості з досвідом мануального та автоматизованого тестування. Також розвиваю навички в prompt engineering. Я поєдную увагу до деталей, критичне мислення та технічні знання для досягнення надійних результатів.",
+    "aboutText2": "Моя стійкість та витривалість — як плавання 25 метрів батерфляєм на одному вдиху — допомагають мені залишатися послідовною та досягати цілей."
+}

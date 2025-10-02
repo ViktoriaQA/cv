@@ -1,72 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vita Franc - QA Engineer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Victoria - QA Engineer</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+  <body>
+    <div class="theme-controls">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+        </button>
+        
+        <select id="languageSelect" class="language-select">
+            <option value="en" selected>EN</option>
+            <option value="ua">UA</option>
+        </select>
+    </div>
+
     <div class="container">
         <header>
-            <img src="https://via.placeholder.com/150" alt="Vita Franc" class="profile-img">
-            <h1>Vita Franc</h1>
-            <div class="title">Manual & Automation QA Engineer</div>
+            <img src="images/profile.png" alt="Victoria Franc" class="profile-img">
+            <h1 data-i18n="name"></h1>
+            <div class="title" data-i18n="title">Manual & Automation QA Engineer</div>
             <div class="contact-info">
                 <a href="https://t.me/floretfranc" target="_blank" title="Telegram">
-                    <i class="fab fa-telegram"></i> Telegram
+                    <i class="fab fa-telegram"></i> <span data-i18n="telegram">Telegram</span>
                 </a>
                 <a href="https://github.com/ViktoriaQA" target="_blank" title="GitHub">
-                    <i class="fab fa-github"></i> GitHub
+                    <i class="fab fa-github"></i> <span data-i18n="github">GitHub</span>
                 </a>
                 <!-- <a href="mailto:vita.franc@example.com" title="Email">
-                    <i class="fas fa-envelope"></i> Email
+                    <i class="fas fa-envelope"></i> <span data-i18n="email">Email</span>
                 </a> -->
             </div>
         </header>
 
         <section id="skills">
-            <h2><i class="fas fa-tools"></i> Skills</h2>
+            <h2><i class="fas fa-tools"></i> <span data-i18n="skills">Skills</span></h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Manual Testing</h3>
+                    <h3 data-i18n="manualTesting">Manual Testing</h3>
                     <ul class="skill-list">
-                        <li>Test cases & checklists</li>
-                        <li>Smoke & regression testing</li>
-                        <li>Black-box & gray-box testing</li>
-                        <li>Test plans</li>
+                        <li data-i18n="testCases">Test cases & checklists</li>
+                        <li data-i18n="smokeRegression">Smoke & regression testing</li>
+                        <li data-i18n="blackboxGraybox">Black, white box testing</li>
+                        <li data-i18n="testPlans">Test plans</li>
                     </ul>
                 </div>
                 
                 <div class="skill-category">
-                    <h3>Technical Skills</h3>
+                    <h3 data-i18n="technicalSkills">Technical Skills</h3>
                     <ul class="skill-list">
-                        <li>Linux/Unix: terminal commands, SSH, file system</li>
-                        <li>Git: branching, updates, merges</li>
-                        <li>SQL: data validation queries</li>
-                        <li>API Testing: HTTP, Postman, JSON validation</li>
-                        <li>Web Testing: Chrome DevTools, CSS/HTML</li>
-                        <li>Mobile Testing (web): UX best practices</li>
+                        <li data-i18n="linuxUnix">Linux/Unix: terminal commands, SSH, file system</li>
+                        <li data-i18n="git">Git: branching, updates, merges</li>
+                        <li data-i18n="sql">SQL: data validation queries</li>
+                        <li data-i18n="apiTesting">API Testing: HTTP, Postman, JSON validation</li>
+                        <li data-i18n="webTesting">Web Testing: Chrome DevTools, CSS/HTML</li>
+                        <li data-i18n="mobileTesting">Mobile Testing (web): UX best practices</li>
                     </ul>
                 </div>
                 
                 <div class="skill-category">
-                    <h3>Automation Testing</h3>
+                    <h3 data-i18n="automationTesting">Automation Testing!!!</h3>
                     <ul class="skill-list">
-                        <li>Cypress: UI testing, E2E coverage</li>
-                        <li>Playwright: API testing, CRUD operations</li>
-                        <li>Schema validation</li>
-                        <li>File export verification</li>
+                        <li data-i18n="cypress">Cypress: UI testing, E2E coverage</li>
+                        <li data-i18n="playwright">Playwright: API testing, CRUD operations, Schema validation, File export verification</li>
+                        <!-- <li data-i18n="schemaValidation">.dddd..</li>
+                        <li data-i18n="schemaValidation">.dddd..</li>
+                        <li data-i18n="fileExport">....</li> -->
                     </ul>
                 </div>
                 
                 <div class="skill-category">
-                    <h3>Tools</h3>
+                    <h3 data-i18n="tools">Tools</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Jira</span>
                         <span class="skill-tag">Confluence</span>
-                        <span class="skill-tag">Test Management Systems</span>
+                        <span class="skill-tag" data-i18n="testManagement">Test Management Systems</span>
                         <span class="skill-tag">Postman</span>
                         <span class="skill-tag">Swagger</span>
                         <span class="skill-tag">Chrome DevTools</span>
@@ -74,32 +86,30 @@
                 </div>
                 
                 <div class="skill-category">
-                    <h3>Soft Skills</h3>
+                    <h3 data-i18n="softSkills">Soft Skills</h3>
                     <ul class="skill-list">
-                        <li>Strong attention to detail</li>
-                        <li>Analytical thinking</li>
-                        <li>Clear communication</li>
-                        <li>Problem-solving & debugging</li>
-                        <li>Adaptability & fast learning</li>
-                        <li>Time management</li>
+                        <li data-i18n="attentionDetail">Strong attention to detail</li>
+                        <li data-i18n="analyticalThinking">Analytical thinking</li>
+                        <li data-i18n="clearCommunication">Clear communication</li>
+                        <li data-i18n="problemSolving">Problem-solving & debugging</li>
+                        <li data-i18n="adaptability">Adaptability & fast learning</li>
+                        <li data-i18n="timeManagement">Time management</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section id="about">
-            <h2><i class="fas fa-user"></i> About</h2>
+            <h2><i class="fas fa-user"></i> <span data-i18n="about">About</span></h2>
             <div class="about-content">
-                <p>I specialize in quality assurance with experience in manual and automation testing. I am also developing skills in prompt engineering. I combine attention to detail, critical thinking, and technical knowledge to deliver reliable results.</p>
-                <p>My resilience and endurance — <span class="highlight">like swimming 25 meters butterfly with one breath</span> — help me stay consistent and reach goals.</p>
+                <p data-i18n="aboutText1">I specialize in quality assurance with experience in manual and automation testing. I am also developing skills in prompt engineering. I combine attention to detail, critical thinking, and technical knowledge to deliver reliable results.</p>
+                <p><span data-i18n="aboutText2">My resilience and endurance — <span class="highlight">like swimming 25 meters butterfly with one breath</span> — help me stay consistent and reach goals.</span></p>
             </div>
         </section>
 
         <footer>
-            <p>&copy; 2025 - QA Engineer</p>
+            <p data-i18n="copyright">&copy; 2025 QA Engineer</p>
         </footer>
     </div>
-
-    <script src="script.ts" defer></script>
-</body>
+    <script src="script.js" defer></script>
 </html>

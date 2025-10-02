@@ -1,0 +1,45 @@
+{
+    "name": "Vita Franc",
+    "title": "Manual & Automation QA Engineer",
+    "skills": "Skills",
+    "about": "About",
+    "copyright": "© 2025 QA Engineer",
+    "telegram": "Telegram",
+    "github": "GitHub",
+    "email": "Email",
+    
+    "manualTesting": "Manual Testing",
+    "technicalSkills": "Technical Skills",
+    "automationTesting": "Automation Testing",
+    "tools": "Tools",
+    "softSkills": "Soft Skills",
+    
+    "testCases": "Test cases & checklists",
+    "smokeRegression": "Smoke & regression testing",
+    "blackboxGraybox": "Black-box & gray-box testing",
+    "testPlans": "Test plans",
+    
+    "linuxUnix": "Linux/Unix: terminal commands, SSH, file system",
+    "git": "Git: branching, updates, merges",
+    "sql": "SQL: data validation queries",
+    "apiTesting": "API Testing: HTTP, Postman, JSON validation",
+    "webTesting": "Web Testing: Chrome DevTools, CSS/HTML",
+    "mobileTesting": "Mobile Testing (web): UX best practices",
+    
+    "cypress": "Cypress: UI testing, E2E coverage",
+    "playwright": "Playwright: API testing, CRUD operations",
+    "schemaValidation": "Schema validation",
+    "fileExport": "File export verification",
+    
+    "testManagement": "Test Management Systems",
+    
+    "attentionDetail": "Strong attention to detail",
+    "analyticalThinking": "Analytical thinking",
+    "clearCommunication": "Clear communication",
+    "problemSolving": "Problem-solving & debugging",
+    "adaptability": "Adaptability & fast learning",
+    "timeManagement": "Time management",
+    
+    "aboutText1": "I specialize in quality assurance with experience in manual and automation testing. I am also developing skills in prompt engineering. I combine attention to detail, critical thinking, and technical knowledge to deliver reliable results.",
+    "aboutText2": "My resilience and endurance — like swimming 25 meters butterfly with one breath — help me stay consistent and reach goals."
+}
