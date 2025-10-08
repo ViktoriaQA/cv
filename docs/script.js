@@ -40,8 +40,8 @@
                         "problemSolving": "Problem-solving & debugging",
                         "adaptability": "Adaptability & fast learning",
                         "timeManagement": "Time management",
-                        "aboutText1": "I specialize in quality assurance with experience in manual and automation testing. I am also developing skills in prompt engineering. I combine attention to detail, critical thinking, and technical knowledge to deliver reliable results.",
-                        "aboutText2": "My resilience and endurance — like swimming 25 meters butterfly with one breath — help me stay consistent and reach goals."
+                        "aboutText1": "Responsible QA Engineer with 2+ years of experience in commercial projects. I specialize in quality assurance with expertise in manual and automation testing. Detail-oriented and skilled in Postman, Chrome DevTools, SQL (DBeaver), Git, Docker, and Linux, with strong knowledge of REST API testing, UI/UX validation, cross-browser testing, and CI/CD workflows. I combine attention to detail, critical thinking, and technical knowledge to deliver quality results.",
+                        "aboutText2": "I maintain a focus on quality throughout the development lifecycle, without missing any small details."
                     },
                     ua: {
                         "name": "Вікторія Ф.",
@@ -65,7 +65,7 @@
                         "git": "Git: гілки, оновлення, мердж",
                         "sql": "SQL: запити для валідації даних",
                         "apiTesting": "API тестування: HTTP, Postman, JSON валідація",
-                        "webTesting": "Web тестування: Chrome DevTools, CSS/HTML",
+                        "webTesting": "Web тестування: Chrome DevTools",
                         "mobileTesting": "Mobile тестування (web): UX best practices",
                         "cypress": "Cypress: UI тестування, E2E покриття",
                         "playwright": "Playwright: API тестування, CRUD операції",
@@ -78,13 +78,12 @@
                         "problemSolving": "Вирішення проблем та дебаггінг",
                         "adaptability": "Адаптивність та швидке навчання",
                         "timeManagement": "Тайм менеджмент",
-                        "aboutText1": "Я спеціалізуюсь на забезпеченні якості з досвідом мануального та автоматизованого тестування. Також розвиваю навички в prompt engineering. Я поєдную увагу до деталей, критичне мислення та технічні знання для досягнення надійних результатів.",
-                        "aboutText2": "Моя стійкість та витривалість — як плавання 25 метрів батерфляєм на одному вдиху — допомагають мені залишатися послідовною та досягати цілей."
+                        "aboutText1": "Відповідальний інженер з контролю якості з більш ніж 2-річним досвідом роботи в комерційних проектах. Спеціалізуюся на забезпеченні якості з досвідом ручного та автоматизованого тестування. Орієнтований на деталі та маю досвід роботи з Postman, Chrome DevTools, SQL (DBeaver), Git, Docker та Linux, а також маю глибокі знання REST API-тестування, UI/UX-валідації, кросбраузерного тестування та робочих процесів CI/CD. Поєдную увагу до деталей, критичне мислення та технічні знання для досягнення якісних результатів.",
+                        "aboutText2": "Зберігаю фокус на якості протягом усього життєвого циклу розробки, не пропускаючи дрібних деталей."
                     }
                 };
                 this.init();
             }
-
             init() {
                 this.loadThemePreference();
                 this.loadLanguagePreference();
